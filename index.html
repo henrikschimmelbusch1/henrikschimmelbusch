@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preload" href="https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://mail.google.com&size=16" as="image">
+    <link rel="preload" href="https://www.google.com/s2/favicons?domain=youtube.com&sz=128" as="image">
+    <link rel="preload" href="https://www.google.com/s2/favicons?domain=churchofjesuschrist.org&sz=128" as="image">
+    <link rel="preload" href="https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg" as="image">
+    <link rel="preload" href="https://www.google.com/s2/favicons?domain=sightreadingfactory.com&sz=128" as="image">
+    <link rel="preload" href="https://cdn.oaistatic.com/assets/favicon-l4nq08hd.svg" as="image">
+    <link rel="preload" href="https://www.gstatic.com/aistudio/ai_studio_favicon_2_256x256.png" as="image">
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+<style>
+    body.custom-cursor-active * {
+        cursor: none !important;
+    }
+    .cursor-ring {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 32px;
+        height: 32px;
+        border-width: 4px;
+        border-style: solid;
+        border-color: rgba(128, 128, 128, var(--border-opacity, 1));
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+    }
+</style>
+</head>
+<body class="bg-white custom-cursor-active">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
